@@ -3,23 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		376D9E5E2432A42E00B4ACBC /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376D9E5D2432A42E00B4ACBC /* ScannerViewController.swift */; };
+		376D9E602432A61600B4ACBC /* SwiftUIScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376D9E5F2432A61600B4ACBC /* SwiftUIScannerView.swift */; };
 		37CF9A3A24329BFE0040FF0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF9A3924329BFE0040FF0C /* AppDelegate.swift */; };
 		37CF9A3C24329BFE0040FF0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF9A3B24329BFE0040FF0C /* SceneDelegate.swift */; };
-		37CF9A3E24329BFE0040FF0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF9A3D24329BFE0040FF0C /* ContentView.swift */; };
 		37CF9A4024329C000040FF0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37CF9A3F24329C000040FF0C /* Assets.xcassets */; };
 		37CF9A4324329C000040FF0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37CF9A4224329C000040FF0C /* Preview Assets.xcassets */; };
 		37CF9A4624329C000040FF0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37CF9A4424329C000040FF0C /* LaunchScreen.storyboard */; };
+		37CF9A4F24329E730040FF0C /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 37CF9A4E24329E730040FF0C /* CodeScanner */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		376D9E5D2432A42E00B4ACBC /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		376D9E5F2432A61600B4ACBC /* SwiftUIScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIScannerView.swift; sourceTree = "<group>"; };
 		37CF9A3624329BFE0040FF0C /* SwiftUINativeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUINativeScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37CF9A3924329BFE0040FF0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37CF9A3B24329BFE0040FF0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		37CF9A3D24329BFE0040FF0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		37CF9A3F24329C000040FF0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37CF9A4224329C000040FF0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		37CF9A4524329C000040FF0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37CF9A4F24329E730040FF0C /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,13 +60,14 @@
 		37CF9A3824329BFE0040FF0C /* SwiftUINativeScanner */ = {
 			isa = PBXGroup;
 			children = (
+				376D9E5D2432A42E00B4ACBC /* ScannerViewController.swift */,
 				37CF9A3924329BFE0040FF0C /* AppDelegate.swift */,
 				37CF9A3B24329BFE0040FF0C /* SceneDelegate.swift */,
-				37CF9A3D24329BFE0040FF0C /* ContentView.swift */,
 				37CF9A3F24329C000040FF0C /* Assets.xcassets */,
 				37CF9A4424329C000040FF0C /* LaunchScreen.storyboard */,
 				37CF9A4724329C000040FF0C /* Info.plist */,
 				37CF9A4124329C000040FF0C /* Preview Content */,
+				376D9E5F2432A61600B4ACBC /* SwiftUIScannerView.swift */,
 			);
 			path = SwiftUINativeScanner;
 			sourceTree = "<group>";
@@ -91,6 +96,9 @@
 			dependencies = (
 			);
 			name = SwiftUINativeScanner;
+			packageProductDependencies = (
+				37CF9A4E24329E730040FF0C /* CodeScanner */,
+			);
 			productName = SwiftUINativeScanner;
 			productReference = 37CF9A3624329BFE0040FF0C /* SwiftUINativeScanner.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +127,9 @@
 				Base,
 			);
 			mainGroup = 37CF9A2D24329BFE0040FF0C;
+			packageReferences = (
+				37CF9A4D24329E730040FF0C /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 37CF9A3724329BFE0040FF0C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -148,7 +159,8 @@
 			files = (
 				37CF9A3A24329BFE0040FF0C /* AppDelegate.swift in Sources */,
 				37CF9A3C24329BFE0040FF0C /* SceneDelegate.swift in Sources */,
-				37CF9A3E24329BFE0040FF0C /* ContentView.swift in Sources */,
+				376D9E602432A61600B4ACBC /* SwiftUIScannerView.swift in Sources */,
+				376D9E5E2432A42E00B4ACBC /* ScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37CF9A4D24329E730040FF0C /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37CF9A4E24329E730040FF0C /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37CF9A4D24329E730040FF0C /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37CF9A2E24329BFE0040FF0C /* Project object */;
 }
